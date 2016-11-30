@@ -20,19 +20,17 @@ Personnelement je l'utilis dÈja avec DOMOTICZ, le principe est díactiver le serv
 Free mobile voir ici:
 https://easydomoticz.com/nouveau-service-sms-pour-les-utilisateurs-de-free-mobile/
 
-Il peut supporter jusqu'a 5 utilisateurs Free mobile.
+Jarvis-FREE-sms peut supporter jusqu'a 5 utilisateurs Free mobile.
 
 ## Usage
 ```
 
-You: envoie un sms √† l√©a
+You: envoie un sms a leaa
 Jarvis: Ok quel est le message ?
-You: as tu pens√© √† envoyer des fleurs √† ta m√®re ?
+You: as tu pensa a† envoyer des fleurs a† ta mere ?
 Jarvis: le message est as tu pense a envoyer des fleurs a ta mere  ok j'envoie ?
 You: oui
 Jarvis: c'est parti...
-
-
 
 
 ```
