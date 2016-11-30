@@ -17,7 +17,7 @@ On peut maintenant envoyer des sms directement depuis Jarvis en appelant une sim
   « https://smsapi.free-mobile.fr/sendmsg?user=000000pass=xxxxxxxxx&msg=Hello%20World%20! »
 
 
-Personnelement je l utilis deja avec DOMOTICZ, le principe est d activer le service SMS chez Free qui donne alors un password  lie a votre identifiant 
+Personnelement je l utilise deja avec DOMOTICZ, le principe est d activer le service SMS chez Free qui donne alors un password  lie a votre identifiant 
 Free mobile voir ici:
 https://easydomoticz.com/nouveau-service-sms-pour-les-utilisateurs-de-free-mobile/
 
