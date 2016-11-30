@@ -28,7 +28,7 @@ Jarvis-FREE-sms peut supporter jusqu a 5 utilisateurs Free mobile.
 
 You: envoie un sms a lea
 Jarvis: Ok quel est le message ?
-You: as tu pense a envoyer des fleurs a ta mere ?
+You: as tu pense a envoyer des jolis fleurs a ta mere ?
 Jarvis: le message est as tu pense a envoyer des fleurs a ta mere  ok j envoie ?
 You: oui
 Jarvis: c est parti...
