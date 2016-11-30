@@ -1,0 +1,5 @@
+*ENVOIE UN SMS A (*)== echo "" > ~/smsa.txt && echo "(1), " >> ~/smsa.txt && say "Ok quel est le message ?"
+>(*)==say "le message est (1) ok j'envoie ?" && echo "(1)" >> ~/smsa.txt
+>>*OUI*==say "c'est parti... $(verimess)"
+>>*NON*==say "message annulé"
+
