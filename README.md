@@ -11,11 +11,10 @@ For multi-language plugin:
 -->
 ## Description
 
-Free Mobile a lance un service de notification via SMS pour ses abonnes, 
+Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
 On peut maintenant envoyer des sms directement depuis Jarvis en appelant une simple url https dans les commands
     
   « https://smsapi.free-mobile.fr/sendmsg?user=000000pass=xxxxxxxxx&msg=Hello%20World%20! »
-
 
 Personnelement je l utilise deja avec DOMOTICZ, le principe est d activer le service SMS chez Free qui donne alors un password  lie a votre identifiant 
 Free mobile voir ici:
@@ -28,7 +27,7 @@ Jarvis-FREE-sms peut supporter jusqu a 5 utilisateurs Free mobile.
 
 You: envoie un sms a lea
 Jarvis: Ok quel est le message ?
-You: as tu pense a  envoyer des fleurs a ta mere ?
+You: as tu pense a envoyer des fleurs a ta mere ?
 Jarvis: le message est as tu pense a envoyer des fleurs a ta mere  ok j envoie ?
 You: oui
 Jarvis: c est parti...
