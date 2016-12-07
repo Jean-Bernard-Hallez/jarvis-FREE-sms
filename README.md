@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+Petite correction d'un bug au demmarage de jarvis...
 
 Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
 On peut maintenant s envoyer des sms directement depuis Jarvis en appelant une simple url https dans les commands
