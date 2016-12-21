@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(21/12/16 conflit de réponse OUI/OK résolu...)
 Petite correction d'un bug au demmarage de jarvis...
 
 Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
@@ -27,7 +28,7 @@ ATTENTION:
 Si au domicile ta femme ou les enfants veulent t envoyer un sms,
 ils pouront le faire au travers de jarvis, 
 mais ils ne pouront pas envoyer un sms pour quelqu un d autre !!!! 
-sauf si bien sur on a active ce serice sur la ligne concerne  !!!!
+sauf si bien sur on a active ce service sur la ligne concerne  !!!!
 
 
 ## Usage
