@@ -1,9 +1,26 @@
 #!/bin/bash
 # Here you can create functions which will be available from the commands file
 # You can also use here user variables defined in your config file
+ilyanom() {
+if [[ $NOM1 != "" ]] ; then
+local noma="$NOM1"
+fi
+if [[ $NOM2 != "" ]] ; then
+local noma="$noma, $NOM2"
+fi
+if [[ $NOM3 != "" ]] ; then
+local noma="$noma, $NOM3"
+fi
+if [[ $NOM4 != "" ]] ; then
+local noma="$noma, $NOM4"
+fi
+if [[ $NOM5 != "" ]] ; then
+local noma="$noma, $NOM5"
+fi
+echo "$noma"
+}
 
 verinoms () {
-
 [[ -z $(which curl) ]] && sudo apt-get install curl
 USER=" "
 local NOMOKA=`echo $(jv_sanitize "$order")`

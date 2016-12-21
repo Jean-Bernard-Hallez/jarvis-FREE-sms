@@ -35,13 +35,16 @@ sauf si bien sur on a active ce service sur la ligne concerne  !!!!
 
 ```
 
-You: envoie un sms a lea
-Jarvis: Ok quel est le message ?
-You: as tu pense a envoyer des jolis fleurs a ta mere ?
-Jarvis: le message est as tu pense a envoyer des fleurs a ta mere  ok j envoie ?
-You: oui
-Jarvis: c est parti...
+(21/12/16 Affiche les noms des destinataire possible)
 
+You: envoie un sms
+Jarvis: Envoyer un message à Paul, Michel durant ?
+You: Paul
+Jarvis: Ok quel est le message ?
+You: tu penses a envoyer des jolis fleurs a ton papa ?
+Jarvis:  Voici votre message: tu penses a envoyer des jolis fleurs a ton papa ? L'envoyer ?
+You: OK
+Jarvis: c est parti...
 
 ```
 
