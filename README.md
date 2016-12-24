@@ -10,13 +10,12 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
-(21/12/16 conflit de réponse OUI/OK résolu...)
-Petite correction d'un bug au demmarage de jarvis...
+(24/12/16 ProblÃ¨me encodage UFT8 RÃ©solu...)
 
 Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
 On peut maintenant s envoyer des sms directement depuis Jarvis en appelant une simple url https dans les commands
     
-  « https://smsapi.free-mobile.fr/sendmsg?user=000000pass=xxxxxxxxx&msg=Hello%20World%20! »
+  Â« https://smsapi.free-mobile.fr/sendmsg?user=000000pass=xxxxxxxxx&msg=Hello%20World%20! Â»
 
 Personnelement je l utilise deja avec DOMOTICZ, le principe est d activer le service SMS chez Free qui donne alors un password  lie a votre identifiant 
 Free mobile voir ici:
@@ -34,11 +33,10 @@ sauf si bien sur on a active ce service sur la ligne concerne  !!!!
 ## Usage
 
 ```
-
 (21/12/16 Affiche les noms des destinataire possible)
 
 You: envoie un sms
-Jarvis: Envoyer un message à Paul, Michel durant ?
+Jarvis: Envoyer un message Ã  Paul, Michel durant ?
 You: Paul
 Jarvis: Ok quel est le message ?
 You: tu penses a envoyer des jolis fleurs a ton papa ?
@@ -50,3 +48,4 @@ Jarvis: c est parti...
 
 ## Author
 [Jean-Bernard Hallez](https://github.com/Jean-Bernard-Hallez/jarvis-FREE-sms)
+
