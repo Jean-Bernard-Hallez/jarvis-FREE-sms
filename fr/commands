@@ -1,4 +1,4 @@
-*ENVO* SMS*==say "Envoyer un message à $(ilyanom) ?"
+*ENVO* SMS*==ilyanom
 >*== verinoms && if [ "$order" = "$PNOM" ]; then say "Quel est le contenu du message pour $order"; else say "Je ne connais pas $order. Annulation."; commands="$(jv_get_commands)"; return; fi
 >>*==say "Voici votre message: $order. L'envoyer?" &&  echo "" > ~/smsa.txt && echo "$order" >> ~/smsa.txt 
 >>>*OUI*|*OK*==  say "Ok... c'est parti... $username $(envoimess)"

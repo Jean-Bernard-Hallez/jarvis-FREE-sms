@@ -17,14 +17,13 @@ fi
 if [[ $NOM5 != "" ]] ; then
 local noma="$noma, $NOM5"
 fi
-echo "$noma"
+say "Envoyer un message à $noma"
 }
 
 verinoms () {
 [[ -z $(which curl) ]] && sudo apt-get install curl
 USER=" "
 local NOMOKA=`echo $(jv_sanitize "$order")`
-
 local NOM11=`echo $(jv_sanitize "$NOM1")`
 local NOM22=`echo $(jv_sanitize "$NOM2")`
 local NOM33=`echo $(jv_sanitize "$NOM3")`

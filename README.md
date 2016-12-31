@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(31/12/16 Correction de compatibilité avec Jarvis UI)
 (24/12/16 Problème encodage UFT8 Résolu...)
 
 Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
