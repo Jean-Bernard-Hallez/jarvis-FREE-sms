@@ -1,7 +1,7 @@
 #!/bin/bash
 # Here you can create functions which will be available from the commands file
 # You can also use here user variables defined in your config file
-ilyanom() {
+jv_pg_ct_ilyanom() {
 if [[ $NOM1 != "" ]] ; then
 local noma="$NOM1"
 fi
@@ -17,10 +17,10 @@ fi
 if [[ $NOM5 != "" ]] ; then
 local noma="$noma, $NOM5"
 fi
-say "Envoyer un message à $noma"
+echo "$noma"
 }
 
-verinoms () {
+jv_pg_ct_verinoms () {
 [[ -z $(which curl) ]] && sudo apt-get install curl
 USER=" "
 local NOMOKA=`echo $(jv_sanitize "$order")`
@@ -68,7 +68,7 @@ fi
 return
 }
 
-envoimess () {
+jv_pg_ct_envoimess () {
 MESS=`echo $(cat ~/smsa.txt) | sed "s/ /%20/g"`
 echo "$(curl -s "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=Mess%20envoyé%20avec%20$trigger:%20$MESS")"
 }
