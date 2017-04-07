@@ -1,3 +1,4 @@
+MESSEXTERNE*==jv_pg_ct_messexterne
 *ENVOIE*LISTE*SMS==say "Envoyer la liste des courses à qui ? $(jv_pg_ct_ilyanom)"
 >*== jv_pg_ct_verinoms && if [ "$order" = "$PNOM" ]; then  echo "" > ~/smsa.txt && echo "Liste d'ingrédients à acheter: $(cat /home/pi/listedescourses.txt)" >> ~/smsa.txt; say "La liste des courses est parti par sms à $order $(jv_pg_ct_envoimess)" else say "Je ne connais pas $order. Annulation."; commands="$(jv_get_commands)"; return; fi
 
@@ -6,3 +7,4 @@
 >>*==say "Voici votre message: $order. L'envoyer?" &&  echo "" > ~/smsa.txt && echo "$order" >> ~/smsa.txt 
 >>>*OUI*|*OK*==  say "Ok... c'est parti... $username $(jv_pg_ct_envoimess)"
 >>>*NON*== say "Ok Annulation..."
+

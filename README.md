@@ -10,9 +10,11 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(07/04/17 Possibilité d'envoie de message par ./jarvis.sh -x "MESSEXTERNE, a qui, contenu du message")
 (31/01/17 Si vous avez le plugin http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses (http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses) vous pouvez envoyer la liste par sms.)
 (31/12/16 Correction de compatibilité avec Jarvis UI)
 (24/12/16 Problème encodage UFT8 Résolu...)
+(21/12/16 Affiche les noms des destinataire possible)
 
 Free Mobile a lance un service de notification via SMS pour ses abonnes, gratuit si vous avez le forfait illimite en sms bien sur.
 On peut maintenant s envoyer des sms directement depuis Jarvis en appelant une simple url https dans les commands
@@ -38,8 +40,6 @@ sauf si bien sur on a active ce service sur la ligne concerne  !!!!
 ## Usage
 
 ```
-(21/12/16 Affiche les noms des destinataire possible)
-
 You: envoie un sms
 Jarvis: Envoyer un message à Paul, Michel durant ?
 You: Paul
