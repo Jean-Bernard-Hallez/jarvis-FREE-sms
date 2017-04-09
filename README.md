@@ -10,7 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
-(07/04/17 Possibilité d'envoie de message par ./jarvis.sh -x "MESSEXTERNE, a qui, contenu du message")
+(07/04/17 Possibilité d'envoie de message par ./jarvis.sh -x "MESSEXTERNE; a qui; contenu du message")
 (31/01/17 Si vous avez le plugin http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses (http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses) vous pouvez envoyer la liste par sms.)
 (31/12/16 Correction de compatibilité avec Jarvis UI)
 (24/12/16 Problème encodage UFT8 Résolu...)
