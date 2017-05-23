@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(23/05/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin:    jarvis "-x MESSEXTERNE; a qui; contenu du message")
 (07/04/17 Possibilité d'envoie de message par ./jarvis.sh -x "MESSEXTERNE; a qui; contenu du message")
 (31/01/17 Si vous avez le plugin http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses (http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses) vous pouvez envoyer la liste par sms.)
 (31/12/16 Correction de compatibilité avec Jarvis UI)
@@ -33,6 +34,8 @@ ils pouront le faire au travers de jarvis,
 mais ils ne pouront pas envoyer un sms pour quelqu un d autre !!!! 
 sauf si bien sur on a active ce service sur la ligne concerne  !!!!
 
+
+
 ## Languages
 
 * Français
@@ -54,6 +57,11 @@ You: envoie la liste des courses par sms
 Jarvis: Envoyer la liste des courses à qui  Paul, Michel durant ?
 You: Paul
 Jarvis: La liste des courses est parti par sms à Paul
+
+
+En mode console:   
+jarvis "-x MESSEXTERNE; JB; coucou je t'aime très fort... à tout à l'heure"
+Message externe recu et traité...
 
 ```
 
