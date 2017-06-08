@@ -65,6 +65,10 @@ PNOM="$order"
 return
 fi
 
+if [[ "$order" =~ "$PNOM" ]]; then 
+say "Je ne reconnais pas $order. Annulation...."; 
+fi
+
 return
 }
 

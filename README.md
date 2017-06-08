@@ -10,8 +10,9 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
-(23/05/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin:  jv_handle_order "MESSEXTERNEa qui; contenu du message"
+(08/06/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin:  jv_handle_order "MESSEXTERNEa qui; contenu du message"
                                                             ou à travers la console  jarvis "-x MESSEXTERNE; a qui; contenu du message"
+dans une function externe afin de vérifier à qui vous pouvez envoyer le sms rajouter: say "A qui j'envoie le SMS à $(jv_pg_ct_ilyanom) ou personne ?"
 (31/01/17 Si vous avez le plugin http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses (http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses) vous pouvez envoyer la liste par sms.)
 (31/12/16 Correction de compatibilité avec Jarvis UI)
 (24/12/16 Problème encodage UFT8 Résolu...)
