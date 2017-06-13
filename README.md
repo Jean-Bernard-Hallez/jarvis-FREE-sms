@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(13/06/17 Correction bug en UI)
 (08/06/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin:  jv_handle_order "MESSEXTERNEa qui; contenu du message"
                                                             ou à travers la console  jarvis "-x MESSEXTERNE; a qui; contenu du message"
 dans une function externe afin de vérifier à qui vous pouvez envoyer le sms rajouter: say "A qui j'envoie le SMS à $(jv_pg_ct_ilyanom) ou personne ?"

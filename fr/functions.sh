@@ -78,21 +78,23 @@ echo "$(curl -s "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg
 }
 
 jv_pg_ct_messexterne() {
-COMPT_messexterne=`echo "$order" | grep -o ";" | wc -w`
+COMPT_messexterne=`echo "$order" | grep -o ";" | wc -w`;
 if [ "$COMPT_messexterne" == "2" ]; then 
-AQUI_messexterne=`echo "$order" | cut -d ";" -f2` 
-Mess_messexterne=`echo "$order" | cut -d ";" -f3` 
+AQUI_messexterne=`echo "$order" | cut -d ";" -f2`; 
+Mess_messexterne=`echo "$order" | cut -d ";" -f3`; 
 
 # echo "AQUI_messexterne=$AQUI_messexterne=, Mess_messexterne=$Mess_messexterne, COMPT_messexterne=$COMPT_messexterne"
-order="$AQUI_messexterne"
-jv_pg_ct_verinoms
-MESS=`echo "$Mess_messexterne" | sed "s/ /%20/g"`
-echo "$(curl -s "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=$MESS")"
-echo "Message externe recu et traité..."
+order="$AQUI_messexterne";
+jv_pg_ct_verinoms;
+MESS=`echo "$Mess_messexterne" | sed "s/ /%20/g"`;
+# echo "$(curl -s "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=$MESS")";
+curl -s "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=$MESS";
+
+jv_success "Message externe recu et traité...";
 else
-echo " "
-echo "Erreur, veuillez vous en servir ainsi:"
-echo './jarvis.sh -x "MESSEXTERNE; a qui; contenu du message"'
-echo " "
+jv_success" ";
+jv_success"Erreur, veuillez vous en servir ainsi:";
+jv_success'./jarvis.sh -x "MESSEXTERNE; a qui; contenu du message"';
+jv_success " ";
 fi
 }
