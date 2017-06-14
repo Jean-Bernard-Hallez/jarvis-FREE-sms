@@ -31,6 +31,13 @@ local NOM33=`echo $(jv_sanitize "$NOM3")`
 local NOM44=`echo $(jv_sanitize "$NOM4")`
 local NOM55=`echo $(jv_sanitize "$NOM5")`
 
+if [ -z "$NOM11" ]; then NOM11="§"; fi
+if [ -z "$NOM22" ]; then NOM22="§"; fi
+if [ -z "$NOM33" ]; then NOM33="§"; fi
+if [ -z "$NOM44" ]; then NOM44="§"; fi
+if [ -z "$NOM55" ]; then NOM55="§"; fi
+
+
 if [[ $NOMOKA =~ "$NOM11" ]] ; then
 USER=$USER1
 PASS=$PASS1
@@ -52,17 +59,17 @@ PNOM="$NOM3"
 return
 fi
 
-if [[ $NOMOKA =~ "$NOM44" ]] ; then
+if [[ "$NOMOKA" =~ "$NOM44" ]] ; then
 USER=$USER4
 PASS=$PASS4
-PNOM="$$NOM4"
+PNOM="$NOM4"
 return
 fi
 
 if [[ $NOMOKA =~ "$NOM55" ]] ; then
 USER=$USER5
 PASS=$PASS5
-PNOM="$$NOM5"
+PNOM="$NOM5"
 return
 fi
 
