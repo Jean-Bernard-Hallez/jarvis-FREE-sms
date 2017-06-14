@@ -23,6 +23,7 @@ echo "$noma"
 jv_pg_ct_verinoms () {
 [[ -z $(which curl) ]] && sudo apt-get install curl
 USER=" "
+PNOM=""
 local NOMOKA=`echo $(jv_sanitize "$order")`
 local NOM11=`echo $(jv_sanitize "$NOM1")`
 local NOM22=`echo $(jv_sanitize "$NOM2")`
@@ -30,42 +31,42 @@ local NOM33=`echo $(jv_sanitize "$NOM3")`
 local NOM44=`echo $(jv_sanitize "$NOM4")`
 local NOM55=`echo $(jv_sanitize "$NOM5")`
 
-if [[ $NOMOKA == "$NOM11" ]] ; then
+if [[ $NOMOKA =~ "$NOM11" ]] ; then
 USER=$USER1
 PASS=$PASS1
-PNOM="$order"
+PNOM="$NOM1"
 return
 fi
 
-if [[ $NOMOKA == "$NOM22" ]] ; then
+if [[ $NOMOKA =~ "$NOM22" ]] ; then
 USER=$USER2
 PASS=$PASS2
-PNOM="$order"
+PNOM="$NOM2"
 return
 fi
 
-if [[ $NOMOKA == "$NOM33" ]] ; then
+if [[ $NOMOKA =~ "$NOM33" ]] ; then
 USER=$USER3
 PASS=$PASS3
-PNOM="$order"
+PNOM="$NOM3"
 return
 fi
 
-if [[ $NOMOKA == "$NOM44" ]] ; then
+if [[ $NOMOKA =~ "$NOM44" ]] ; then
 USER=$USER4
 PASS=$PASS4
-PNOM="$order"
+PNOM="$$NOM4"
 return
 fi
 
-if [[ $NOMOKA == "$NOM55" ]] ; then
+if [[ $NOMOKA =~ "$NOM55" ]] ; then
 USER=$USER5
 PASS=$PASS5
-PNOM="$order"
+PNOM="$$NOM5"
 return
 fi
 
-if [[ "$order" =~ "$PNOM" ]]; then 
+if test -z "$PNOM"; then 
 say "Je ne reconnais pas $order. Annulation...."; 
 fi
 
@@ -83,7 +84,7 @@ if [ "$COMPT_messexterne" == "2" ]; then
 AQUI_messexterne=`echo "$order" | cut -d ";" -f2`; 
 Mess_messexterne=`echo "$order" | cut -d ";" -f3`; 
 
-# echo "AQUI_messexterne=$AQUI_messexterne=, Mess_messexterne=$Mess_messexterne, COMPT_messexterne=$COMPT_messexterne"
+# say  "AQUI_messexterne=$AQUI_messexterne=, Mess_messexterne=$Mess_messexterne, COMPT_messexterne=$COMPT_messexterne";
 order="$AQUI_messexterne";
 jv_pg_ct_verinoms;
 MESS=`echo "$Mess_messexterne" | sed "s/ /%20/g"`;

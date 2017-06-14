@@ -14,12 +14,12 @@ For multi-language plugin:
 (08/06/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin de cette manière:
 
 (je vérifie que le nom demandé existe par la question "a qui voulez vous envoyer ce message" le order va être envoyé à:)
-PNOM="" # initialisation variable de retour...
+
 jv_pg_ct_verinoms;
 if test -n "$PNOM"; then # retour si $PNOM = $order je continue
 echo "$PNOM" >> $varchemhomeopathie_sauv;
 say "Je fais partir... "; 
-jv_handle_order "MESSEXTERNEa qui; contenu du message"
+jv_handle_order "MESSEXTERNE; a qui; contenu du message"
 else
 PNOM=""
 return; 
