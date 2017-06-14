@@ -11,8 +11,21 @@ For multi-language plugin:
 -->
 ## Description
 (13/06/17 Correction bug en UI)
-(08/06/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin:  jv_handle_order "MESSEXTERNEa qui; contenu du message"
-                                                            ou à travers la console  jarvis "-x MESSEXTERNE; a qui; contenu du message"
+(08/06/17 Possibilité d'envoyer un sms en externe au travers d'un autre plugin de cette manière:
+
+(je vérifie que le nom demandé existe par la question "a qui voulez vous envoyer ce message" le order va être envoyé à:)
+PNOM="" # initialisation variable de retour...
+jv_pg_ct_verinoms;
+if test -n "$PNOM"; then # retour si $PNOM = $order je continue
+echo "$PNOM" >> $varchemhomeopathie_sauv;
+say "Je fais partir... "; 
+jv_handle_order "MESSEXTERNEa qui; contenu du message"
+else
+PNOM=""
+return; 
+fi
+
+ou à travers la console SSH: jarvis "-x MESSEXTERNE; a qui; contenu du message"
 dans une function externe afin de vérifier à qui vous pouvez envoyer le sms rajouter: say "A qui j'envoie le SMS à $(jv_pg_ct_ilyanom) ou personne ?"
 (31/01/17 Si vous avez le plugin http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses (http://domotiquefacile.fr/jarvis/plugins/jarvis-liste-des-courses) vous pouvez envoyer la liste par sms.)
 (31/12/16 Correction de compatibilité avec Jarvis UI)
