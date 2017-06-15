@@ -19,6 +19,7 @@ jv_pg_ct_verinoms;
 if test -n "$PNOM"; then # retour si $PNOM = $order je continue
 echo "$PNOM" >> $varchemhomeopathie_sauv;
 say "Je fais partir... "; 
+commands="$(jv_get_commands)"
 jv_handle_order "MESSEXTERNE; a qui; contenu du message"
 else
 PNOM=""
